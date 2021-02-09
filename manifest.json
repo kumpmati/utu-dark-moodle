@@ -1,9 +1,8 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Moodle Dark mode",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -15,26 +14,15 @@
     "default_title": "browser action demo",
     "default_popup": "src/browser_action/browser_action.html"
   },
-  "permissions": [
-    "http://moodle.*/*",
-    "https://moodle.*/*"
-  ],
+  "permissions": ["*://moodle.utu.fi/*"],
   "content_scripts": [
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
+      "matches": ["*://moodle.utu.fi/*"],
+      "css": ["src/inject/inject.css"]
     },
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
+      "matches": ["*://moodle.utu.fi/*"],
+      "js": ["src/inject/inject.js"]
     }
   ]
 }

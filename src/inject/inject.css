@@ -1,3 +1,72 @@
 /**
  * Place your custom CSS styles here.
  **/
+
+:root {
+  --mdm-bg2: rgb(20, 20, 20);
+  --mdm-bg: rgb(31, 31, 31);
+  --mdm-bg-light: rgb(40, 40, 40);
+  --mdm-text: rgb(219, 219, 219);
+  --mdm-text-light: rgb(235, 235, 235);
+}
+
+body {
+  background-color: var(--mdm-bg2) !important;
+}
+
+/* Sivun sisäiset ikkunat */
+.card {
+  background-color: var(--mdm-bg-light) !important;
+  color: var(--mdm-text) !important;
+}
+
+/* Navigaatiopalkki */
+body .navbar {
+  background-color: var(--mdm-bg) !important;
+  color: var(--mdm-text) !important;
+}
+
+/* Navigaatipalkin linkit */
+.navbar-light .navbar-nav .nav-link {
+  color: var(--mdm-text) !important;
+}
+
+/* UTU-logo ja Moodle-teksti */
+.navbar-brand {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Sivun keskellä oleva sisältöikkuna */
+#region-main {
+  background-color: var(--mdm-bg) !important;
+  color: var(--mdm-text) !important;
+}
+
+/* */
+.list-group .list-group-item {
+  background-color: var(--mdm-bg) !important;
+  color: var(--mdm-text) !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/*  */
+.list-group .list-group-item.active {
+  background-color: initial !important;
+  color: white !important;
+  border-color: transparent !important;
+}
+
+a {
+  color: #9d63ee !important;
+}
+
+/* Osion otsikon teksti */
+.sectionname a {
+  color: var(--mdm-text-light) !important;
+}
+
+/* Asetusvalikko */
+.navbar.fixed-top .dropdown .dropdown-menu {
+  background-color: var(--mdm-bg) !important;
+  color: var(--mdm-text-light) !important;
+}
