@@ -2,6 +2,7 @@
  * Place your custom CSS styles here.
  **/
 
+/* CSS variables */
 :root {
   --mdm-bg2: rgb(20, 20, 20);
   --mdm-bg: rgb(31, 31, 31);
@@ -10,6 +11,7 @@
   --mdm-text-light: rgb(235, 235, 235);
 }
 
+/* tausta */
 body {
   background-color: var(--mdm-bg2) !important;
 }
@@ -69,4 +71,21 @@ a {
 .navbar.fixed-top .dropdown .dropdown-menu {
   background-color: var(--mdm-bg) !important;
   color: var(--mdm-text-light) !important;
+}
+
+/* Kokeen kysymyksen infolaatikko */
+.que .info {
+  background-color: var(--mdm-bg-light) !important;
+  color: var(--mdm-text) !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Kokeen kysymyksien navigoinnin nappi */
+.path-mod-quiz #mod_quiz_navblock .qnbutton {
+  background-color: var(--mdm-bg-light) !important;
+}
+
+/* Kokeen kysymyksien navigoinnin nappi */
+.path-mod-quiz #mod_quiz_navblock .qnbutton.notyetanswered .trafficlight {
+  background-color: var(--mdm-bg-light) !important;
 }
