@@ -4,20 +4,35 @@
 
 /* CSS variables */
 :root {
-  --mdm-bg2: rgb(20, 20, 20);
   --mdm-bg: rgb(31, 31, 31);
-  --mdm-bg-light: rgb(40, 40, 40);
+  --mdm-bg-light: rgb(35, 35, 35);
+  --mdm-bg-dark: rgb(20, 20, 20);
   --mdm-text: rgb(219, 219, 219);
   --mdm-text-light: rgb(235, 235, 235);
+  --mdm-border: rgba(255, 255, 255, 0.1);
+  --mdm-filter: invert(1) hue-rotate(180deg);
+  --mdm-link: #9d63ee;
+}
+
+/* dark mode -nappi */
+.dark-mode-button:hover {
+  color: red !important;
+  background-color: var(--mdm-link) !important;
+  cursor: pointer;
 }
 
 /* tausta */
 body {
-  background-color: var(--mdm-bg2) !important;
+  background-color: var(--mdm-bg-dark) !important;
 }
 
 /* Sivun sisäiset ikkunat */
-.card {
+.card,
+#page-enrol-users #filterform,
+.que .history,
+.userprofile .profile_tree section,
+.groupinfobox,
+.well {
   background-color: var(--mdm-bg-light) !important;
   color: var(--mdm-text) !important;
 }
@@ -35,7 +50,7 @@ body .navbar {
 
 /* UTU-logo ja Moodle-teksti */
 .navbar-brand {
-  filter: invert(1) hue-rotate(180deg);
+  filter: var(--mdm-filter);
 }
 
 /* Sivun keskellä oleva sisältöikkuna */
@@ -48,7 +63,7 @@ body .navbar {
 .list-group .list-group-item {
   background-color: var(--mdm-bg) !important;
   color: var(--mdm-text) !important;
-  border-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--mdm-border) !important;
 }
 
 /*  */
@@ -59,7 +74,7 @@ body .navbar {
 }
 
 a {
-  color: #9d63ee !important;
+  color: var(--mdm-link) !important;
 }
 
 /* Osion otsikon teksti */
@@ -77,7 +92,7 @@ a {
 .que .info {
   background-color: var(--mdm-bg-light) !important;
   color: var(--mdm-text) !important;
-  border-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--mdm-border) !important;
 }
 
 /* Kokeen kysymyksien navigoinnin nappi */
@@ -88,4 +103,37 @@ a {
 /* Kokeen kysymyksien navigoinnin nappi */
 .path-mod-quiz #mod_quiz_navblock .qnbutton.notyetanswered .trafficlight {
   background-color: var(--mdm-bg-light) !important;
+}
+
+/* Pääikkunan artikkeli */
+.forum-post-container .forumpost {
+  border: 1px solid var(--mdm-border) !important;
+}
+
+/* Ilmoitusikkuna */
+.popover-region-container {
+  background-color: var(--mdm-bg-light) !important;
+}
+
+/* Viestitysikkuna */
+.message-app {
+  background-color: var(--mdm-bg-light) !important;
+}
+
+/* Kokeen aiempien kertojen yhteenveto */
+#page-mod-quiz-view .generaltable.quizattemptsummary {
+  color: var(--mdm-text-light) !important;
+}
+
+.no-overflow > .generaltable {
+  color: var(--mdm-text) !important;
+}
+
+#intro {
+  color: initial !important;
+}
+
+/* Koko ruudun viestitys-ikkuna */
+#page-message-index #region-main div[role="main"] .message-app.main {
+  background-color: var(--mdm-bg) !important;
 }
