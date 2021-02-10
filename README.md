@@ -1,6 +1,6 @@
 # UTU Dark Moodle
 
-Dead simple chrome extension that adds a dark mode to the UTU Moodle website.
+Dead simple chrome extension that adds a dark mode to the UTU Moodle website, along with a button to toggle dark mode.
 
 ## How to install
 
@@ -16,6 +16,6 @@ Dead simple chrome extension that adds a dark mode to the UTU Moodle website.
 
 ## Notes
 
-Some text might have bad visibility if the course creator has coloured the text dark manually.
+- Some text might have bad visibility if the course creator has coloured the text dark manually.
 
-Some places might not be completed
+- Some places might not be completed

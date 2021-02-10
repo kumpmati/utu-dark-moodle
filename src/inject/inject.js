@@ -4,15 +4,17 @@ const darkScheme = new Map()
   .set("--mdm-bg-dark", "rgb(20, 20, 20)")
   .set("--mdm-text", "rgb(219, 219, 219)")
   .set("--mdm-text-light", "rgb(235, 235, 235)")
-  .set("--mdm-border", "rgba(255, 255, 255, 0.1)");
+  .set("--mdm-border", "rgba(255, 255, 255, 0.1)")
+  .set("--mdm-filter", "invert(1) hue-rotate(180deg)");
 
 const defaultScheme = new Map()
-  .set("--mdm-bg", "unset")
-  .set("--mdm-bg-light", "unset")
-  .set("--mdm-bg-dark", "unset")
+  .set("--mdm-bg", "#fff")
+  .set("--mdm-bg-light", "#fff")
+  .set("--mdm-bg-dark", "#e6e6e6")
   .set("--mdm-text", "unset")
   .set("--mdm-text-light", "unset")
-  .set("--mdm-border", "unset");
+  .set("--mdm-border", "rgba(0,0,0,0.1)")
+  .set("--mdm-filter", "none");
 
 /**
  * Updates the color scheme
@@ -27,8 +29,8 @@ function setMode(mode) {
   }
 
   localStorage.setItem("mdm-mode", mode);
-  const nextMode = mode === "light" ? "dark" : "light";
-  return `Switch to ${nextMode}`;
+  const text = mode === "light" ? "🌚" : "🌞";
+  return text;
 }
 
 chrome.extension.sendMessage({}, () => {

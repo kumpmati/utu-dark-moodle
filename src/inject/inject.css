@@ -1,8 +1,4 @@
-/**
- * Place your custom CSS styles here.
- **/
-
-/* CSS variables */
+/* Värit */
 :root {
   --mdm-bg: rgb(31, 31, 31);
   --mdm-bg-light: rgb(35, 35, 35);
@@ -15,10 +11,15 @@
 }
 
 /* dark mode -nappi */
-.dark-mode-button:hover {
-  color: red !important;
-  background-color: var(--mdm-link) !important;
+.dark-mode-button {
+  font-size: 18px;
+  text-align: center;
+  width: 3rem;
   cursor: pointer;
+}
+
+.dark-mode-button:hover {
+  background-color: var(--mdm-link) !important;
 }
 
 /* tausta */
