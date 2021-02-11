@@ -17,7 +17,6 @@
   width: 3rem;
   cursor: pointer;
 }
-
 .dark-mode-button:hover {
   background-color: var(--mdm-link) !important;
 }
@@ -47,6 +46,16 @@ body .navbar {
 /* Navigaatipalkin linkit */
 .navbar-light .navbar-nav .nav-link {
   color: var(--mdm-text) !important;
+}
+
+/* Sivupalkin toggle-nappi */
+.navbar > div > button[data-preference="drawer-open-nav"] {
+  color: var(--mdm-text-light) !important;
+  background-color: var(--mdm-bg-light) !important;
+  border-color: var(--mdm-border) !important;
+}
+.navbar > div > button[data-preference="drawer-open-nav"]:hover {
+  background-color: var(--mdm-bg-dark) !important;
 }
 
 /* UTU-logo ja Moodle-teksti */
