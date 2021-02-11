@@ -1,4 +1,4 @@
-/* Värit */
+/* Dark color scheme */
 :root {
   --mdm-bg: rgb(31, 31, 31);
   --mdm-bg-light: rgb(35, 35, 35);
@@ -10,7 +10,7 @@
   --mdm-link: #9d63ee;
 }
 
-/* dark mode -nappi */
+/* dark mode -button */
 .dark-mode-button {
   font-size: 18px;
   text-align: center;
@@ -21,12 +21,12 @@
   background-color: var(--mdm-link) !important;
 }
 
-/* tausta */
+/* background */
 body {
   background-color: var(--mdm-bg-dark) !important;
 }
 
-/* Sivun sisäiset ikkunat */
+/* page cards */
 .card,
 #page-enrol-users #filterform,
 .que .history,
@@ -37,18 +37,18 @@ body {
   color: var(--mdm-text) !important;
 }
 
-/* Navigaatiopalkki */
+/* Navbar */
 body .navbar {
   background-color: var(--mdm-bg) !important;
   color: var(--mdm-text) !important;
 }
 
-/* Navigaatipalkin linkit */
+/* Nav bar buttons */
 .navbar-light .navbar-nav .nav-link {
   color: var(--mdm-text) !important;
 }
 
-/* Sivupalkin toggle-nappi */
+/* Nav drawer toggle button */
 .navbar > div > button[data-preference="drawer-open-nav"] {
   color: var(--mdm-text-light) !important;
   background-color: var(--mdm-bg-light) !important;
@@ -58,92 +58,89 @@ body .navbar {
   background-color: var(--mdm-bg-dark) !important;
 }
 
-/* UTU-logo ja Moodle-teksti */
-.navbar-brand {
-  filter: var(--mdm-filter);
-}
-
-/* Sivun keskellä oleva sisältöikkuna */
-#region-main {
-  background-color: var(--mdm-bg) !important;
-  color: var(--mdm-text) !important;
-}
-
-/* */
+/* Nav drawer items */
 .list-group .list-group-item {
   background-color: var(--mdm-bg) !important;
   color: var(--mdm-text) !important;
   border-color: var(--mdm-border) !important;
 }
 
-/*  */
+/* Current active nav drawer item */
 .list-group .list-group-item.active {
   background-color: initial !important;
   color: white !important;
   border-color: transparent !important;
 }
 
+/* UTU-logo and Moodle-text */
+.navbar-brand {
+  filter: var(--mdm-filter);
+}
+
+/* Main content window */
+#region-main {
+  background-color: var(--mdm-bg) !important;
+  color: var(--mdm-text) !important;
+}
+
+/* Main content article */
+.forum-post-container .forumpost {
+  border: 1px solid var(--mdm-border) !important;
+}
+
 a {
   color: var(--mdm-link) !important;
 }
 
-/* Osion otsikon teksti */
+/* Section header text */
 .sectionname a {
   color: var(--mdm-text-light) !important;
 }
 
-/* Asetusvalikko */
+/* Settings dropdown */
 .navbar.fixed-top .dropdown .dropdown-menu {
   background-color: var(--mdm-bg) !important;
   color: var(--mdm-text-light) !important;
 }
 
-/* Kokeen kysymyksen infolaatikko */
+/* Messaging sidebar */
+.message-app {
+  background-color: var(--mdm-bg-light) !important;
+}
+
+/* Messaging page */
+#page-message-index #region-main div[role="main"] .message-app.main {
+  background-color: var(--mdm-bg) !important;
+}
+
+/* Exam question info box */
 .que .info {
   background-color: var(--mdm-bg-light) !important;
   color: var(--mdm-text) !important;
   border-color: var(--mdm-border) !important;
 }
 
-/* Kokeen kysymyksien navigoinnin nappi */
+/* Exam question nav button */
 .path-mod-quiz #mod_quiz_navblock .qnbutton {
   background-color: var(--mdm-bg-light) !important;
 }
 
-/* Kokeen kysymyksien navigoinnin nappi */
+/* Exam question nav button status */
 .path-mod-quiz #mod_quiz_navblock .qnbutton.notyetanswered .trafficlight {
   background-color: var(--mdm-bg-light) !important;
 }
 
-/* Pääikkunan artikkeli */
-.forum-post-container .forumpost {
-  border: 1px solid var(--mdm-border) !important;
-}
-
-/* Ilmoitusikkuna */
+/* Notifications window */
 .popover-region-container {
   background-color: var(--mdm-bg-light) !important;
 }
 
-/* Viestitysikkuna */
-.message-app {
-  background-color: var(--mdm-bg-light) !important;
-}
-
-/* Kokeen aiempien kertojen yhteenveto */
+/* Exam summary of previous attempts */
 #page-mod-quiz-view .generaltable.quizattemptsummary {
   color: var(--mdm-text-light) !important;
 }
 
-.no-overflow > .generaltable {
+/* Table */
+.generaltable {
   color: var(--mdm-text) !important;
-}
-
-#intro {
-  color: initial !important;
-}
-
-/* Koko ruudun viestitys-ikkuna */
-#page-message-index #region-main div[role="main"] .message-app.main {
-  background-color: var(--mdm-bg) !important;
 }
